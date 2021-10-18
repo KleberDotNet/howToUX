@@ -1,0 +1,21 @@
+html *
+{
+    font-family: 'Poppins', sans-serif;
+}
+
+#title-screen {
+    color: white;
+}
+
+#title {
+    font-weight: 900;
+    font-size: 700%;
+}
+
+#title-dotcom {
+    font-size: 50%;
+}
+
+.bg-primary {
+    background-image: linear-gradient(rgb(199, 58, 58), rgb(212, 116, 116));
+}
