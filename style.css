@@ -51,6 +51,11 @@ html *
     }
   }
 
+/* FOOTER */
+#footer-message {
+    padding-top: 10px;
+    font-size: 80%;
+}
 
 /* BACKGROUNDS, COLORS AND BUTTONS */
 .bg-primary {

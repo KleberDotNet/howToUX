@@ -28,22 +28,22 @@
     
     <div class="bg-primary p-5 pb-1" id="title-screen">
         
-        <div class="text-end h3 p-3">
-            <button id="dark-mode-switch">
+        <div class="text-end h3 p-3" >
+            <button data-bs-toggle="popover" data-bs-trigger="hover" data-bs-placement="left" title="Título" data-bs-content="Hoje em dia o tema escuro (Dark Mode) está sendo muito utilizado. O usuário tem a opção de visualizar a tela com tons que não cansam os olhos." id="dark-mode-switch">
                 <i class="bi bi-lightbulb-fill"></i>
             </button>
         </div>
 
         <div class="container text-center">
-            <h1 id="title">HOWTOUX<span id="title-dotcom">.com</span></h1>
+            <h1 data-bs-toggle="popover" data-bs-trigger="hover" data-bs-content="O título do site está centralizado e em destaque. Dê destaque ao produto ou negócio na sua capa ou landing page." id="title">HOWTOUX<span id="title-dotcom">.com</span></h1>
 
-            <p class="lead p-3">Boas práticas de design de interfaces</p>
+            <p class="lead p-3" data-bs-toggle="popover" data-bs-trigger="hover" data-bs-placement="bottom" data-bs-content="Com clareza e poucas palavras, mostre ao que veio.">Boas práticas de design de interfaces</p>
 
-            <p class="lead p-3">Clique sob elementos (textos, imagens e botões) desta página web para ler as dicas</p>
+            <p class="lead p-3" data-bs-toggle="popover" data-bs-trigger="hover" title="Heurística" data-bs-content="Instruções claras e concisas para o usuário.">Clique sob elementos (textos, imagens e botões) desta página web para ler as dicas</p>
         </div>
 
         <div class="lead pt-5 text-center" id="scroll-down">
-            <p>Role para baixo <br> <i class="bi bi-caret-down-fill"></i> </p>
+            <p data-bs-toggle="popover" data-bs-trigger="hover" title="Heurística" data-bs-content="Esta capa pode parecer apenas uma landing page. Usuários podem pensar que o conteúdo acaba aqui, mas este indicador mostra que a página continua mais abaixo.">Role para baixo <br> <i class="bi bi-caret-down-fill"></i> </p>
         </div>
     </div>
 
@@ -54,7 +54,7 @@
             <div class="row px-2">
                 <div class="col-sm-6 p-4">
                     <h2 class="fw-bolder">VAMOS VER UM POUCO DE UI/UX NA PRÁTICA?</h2>
-                    <p class="pt-2">Este site é um exemplo prático de código aberto
+                    <p class="pt-2 fw-light">Este site é um exemplo prático de código aberto
                         baseado nas <span><b>10 Heurísticas de Nielsen</b></span>. Interaja
                         com os elementos da página para entender
                         os princípios.</p>
@@ -64,6 +64,14 @@
                     <img class="img-fluid" src="./img/section-2.svg">
                 </div>
             </div>
+        </div>
+    </div>
+
+    <!--Footer-->
+
+    <div class="bg-dark text-light text-center pb-1">
+        <div class="container">
+            <p class="fw-lighter" id="footer-message">Happy coding!</p>
         </div>
     </div>
 
