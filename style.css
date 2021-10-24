@@ -25,6 +25,7 @@ html *
 }
 
 #title-screen {
+    text-align:center;
     color: white;
 }
 
@@ -51,6 +52,13 @@ html *
     }
   }
 
+/* INTRO */
+#intro {
+    background-color: var(--bg-secondary);
+    color: var(--body-text-color);
+    text-align: justify;
+}
+
 /* FOOTER */
 #footer-message {
     padding-top: 10px;
@@ -62,8 +70,82 @@ html *
     background-image: var(--bg-primary);
 }
 
-#intro {
-    background-color: var(--bg-secondary);
-    color: var(--body-text-color);
-    text-align: justify;
+/* OTHER SCREENS */
+/*--------600PX--------*/
+@media screen and (max-width: 600px) {
+    /*Title section*/
+    #title {
+        padding-top: 70px;
+        font-weight: 800;
+        font-size: 200%;
+    }
+    
+    #title-dotcom {
+        font-size: 50%;
+    }
+
+    .lead {
+        font-size: 80%;
+    }
+
+    /*Intro section*/
+    #intro-title {
+        font-size: 110%;
+    }
+
+    #intro {
+        font-size: 80%;
+    }
+}
+
+/*--------700PX--------*/
+@media screen and (max-width: 700px) and (min-width: 601px) {
+    /*Title section*/
+    #title {
+        font-weight: 800;
+        font-size: 400%;
+    }
+    
+    #title-dotcom {
+        font-size: 50%;
+    }
+
+    .lead {
+        font-size: 90%;
+    }
+
+    /*Intro section*/
+    #intro-title {
+        font-size: 110%;
+    }
+
+    #intro {
+        font-size: 80%;
+    }
+}
+
+/*--------1000PX--------*/
+@media screen and (max-width: 1000px) and (min-width: 701px) {
+    /*Title section*/
+    #title {
+        font-weight: 900;
+        font-size: 500%;
+    }
+    
+    #title-dotcom {
+        font-size: 50%;
+    }
+
+    .lead {
+        font-size: 90%;
+    }
+
+    /*Intro section*/
+    #intro-title {
+        font-size: 110%;
+    }
+
+    #intro {
+        font-size: 80%;
+    }
 }
