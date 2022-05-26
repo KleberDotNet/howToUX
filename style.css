@@ -6,12 +6,14 @@ html *
 /* COLOR SCHEME */
 :root {
     --bg-primary: linear-gradient(rgb(199, 58, 58), rgb(212, 116, 116));
+    --bg-primary-inverted: linear-gradient(rgb(212, 116, 116), rgb(199, 58, 58));
     --bg-secondary: white;
     --body-text-color: black;
 }
 
 .dark-mode:root {
     --bg-primary: linear-gradient(rgb(0, 0, 0), rgb(22, 22, 22));
+    --bg-primary-inverted: linear-gradient(rgb(22, 22, 22), rgb(0, 0, 0));
     --bg-secondary: rgb(12, 12, 12);
     --body-text-color: rgb(255, 255, 255);    
 }
@@ -70,6 +72,10 @@ html *
     background-image: var(--bg-primary);
 }
 
+.bg-primary-inverted {
+    background-image: var(--bg-primary-inverted);
+}
+
 /* OTHER SCREENS */
 /*--------600PX--------*/
 @media screen and (max-width: 600px) {
@@ -94,6 +100,15 @@ html *
     }
 
     #intro {
+        font-size: 80%;
+    }
+
+    /*Author section*/
+    #author-title {
+        font-size: 110%;
+     }
+    
+    #author {
         font-size: 80%;
     }
 }
@@ -122,6 +137,15 @@ html *
     #intro {
         font-size: 80%;
     }
+
+    /*Author section*/
+    #author-title {
+        font-size: 110%;
+    }
+
+    #author {
+        font-size: 80%;
+    }
 }
 
 /*--------1000PX--------*/
@@ -148,4 +172,14 @@ html *
     #intro {
         font-size: 80%;
     }
+
+    /*Author section*/
+    #author-title {
+        font-size: 110%;
+    }
+
+    #author {
+        font-size: 80%;
+    }
+    
 }
