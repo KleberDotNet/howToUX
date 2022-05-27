@@ -4,10 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Practical example of UI/UX principles applied to web development">
+    <meta name="author" content="Kleber Kelvyn Guevara Ferreira">
 
     <!--Bootstrap CSS and Icons-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
 
     <!--Google Fonts (Poppins)-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -29,21 +31,21 @@
     <div class="bg-primary p-5 pb-1" id="title-screen">
         
         <div class="text-end h3 p-3" >
-            <button data-bs-toggle="popover" data-bs-trigger="hover" data-bs-placement="left" title="Título" data-bs-content="Hoje em dia o tema escuro (Dark Mode) está sendo muito utilizado. O usuário tem a opção de visualizar a tela com tons que não cansam os olhos." id="dark-mode-switch">
+            <button data-bs-toggle="popover" data-bs-trigger="hover" data-bs-placement="left" title="Flexibilidade e Eficiência" data-bs-content="A funcionalidade Dark Mode (Tema Escuro) é tão importante que diz respeito a mais de uma heurística. Dê liberdade ao seu usuário para adaptar sua interface para algo que lhe possa ser mais agradável, usando de flexibilidade e minimalismo sem jamais, é claro, ir contra as regras do negócio." id="dark-mode-switch">
                 <i class="bi bi-lightbulb-fill"></i>
             </button>
         </div>
 
         <div class="container text-center">
-            <h1 data-bs-toggle="popover" data-bs-trigger="hover" data-bs-content="O título do site está centralizado e em destaque. Dê destaque ao produto ou negócio na sua capa ou landing page." id="title">HOWTOUX<span id="title-dotcom">.com</span></h1>
+            <h1 data-bs-toggle="popover" data-bs-trigger="hover" title="Estética e Design minimalista" data-bs-content="O título do site está centralizado e em destaque. Dê destaque ao produto ou negócio na sua capa ou landing page. Menos é mais." id="title">HOWTOUX<span id="title-dotcom">.com</span></h1>
 
-            <p class="lead p-3" data-bs-toggle="popover" data-bs-trigger="hover" data-bs-placement="bottom" data-bs-content="Com clareza e poucas palavras, mostre ao que veio.">Boas práticas de design de interfaces</p>
+            <p class="lead p-3" data-bs-toggle="popover" data-bs-trigger="hover" title="Estética e Design minimalista" data-bs-placement="bottom" data-bs-content="Com clareza e poucas palavras, mostre ao que veio.">Boas práticas de design de interfaces</p>
 
-            <p class="lead p-3" data-bs-toggle="popover" data-bs-trigger="hover" title="Heurística" data-bs-content="Instruções claras e concisas para o usuário.">Clique sob elementos (textos, imagens e botões) desta página web para ler as dicas</p>
+            <p class="lead p-3" data-bs-toggle="popover" data-bs-trigger="hover" title="Ajuda e documentação" data-bs-content="Instruções claras e concisas para o usuário.">Clique sob elementos (textos, imagens e botões) desta página web para ler as dicas</p>
         </div>
 
         <div class="lead pt-5 text-center" id="scroll-down">
-            <p data-bs-toggle="popover" data-bs-trigger="hover" title="Heurística" data-bs-content="Esta capa pode parecer apenas uma landing page. Usuários podem pensar que o conteúdo acaba aqui, mas este indicador mostra que a página continua mais abaixo.">Role para baixo <br> <i class="bi bi-caret-down-fill"></i> </p>
+            <p data-bs-toggle="popover" data-bs-trigger="hover" title="Visibilidade do status do sistema" data-bs-content="Esta capa pode parecer apenas uma landing page sem mais conteúdo. Use de artifícios indicativos para que o usuário saiba que há mais conteúdo para surgir na tela.">Role para baixo <br> <i class="bi bi-caret-down-fill"></i> </p>
         </div>
     </div>
 
@@ -85,24 +87,66 @@
         </div>
     </div>
 
+    <!--Slides-->
 
-    <!--Author-->
-    
-    <div class="bg-primary-inverted d-sm-flex p-5 justify-content-start" id="author">
 
-        <div class="container text-left">
-            <h2 class="fw-bolder text-light" id="author-title">SOBRE O AUTOR</h2>
+    <!--Jumbotron-->
+
+    <div class="bg-soft p-5 rounded-3" id="jumbotron">
+        <div class="row container-fluid py-5">
+            <div class="col-sm-7 p-4" data-bs-toggle="popover" data-bs-trigger="hover" title="heurística" data-bs-placement="right" data-bs-content="Explicar">
+                <h1 class="display-5 fw-bold">DICA: Seu usuário não lê</h1>
+                <p class="fs-4">
+                O usuário escaneia da direita para esquerda.
+                <br>Separe seu texto em pequenos
+                <br>grupos de palavras.</p>
+                <button class="btn btn-primary btn-lg" type="button">Codificar mudança no texto para exemplo</button>
+            </div>
         </div>
-
     </div>
 
 
+    <!--Author-->
+    
+    <div class="bg-primary-inverted d-sm-flex p-5" id="author">
+
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-9 pb-5"> 
+                  <h2 class="fw-bolder text-light" id="author-title">SOBRE O AUTOR</h2> 
+                </div>
+                <div class="col-4 text-center">
+                    <img class="img-fluid" data-bs-toggle="popover" data-bs-trigger="hover" data-bs-placement="top" data-bs-content="Oi, meu nome é Kleber Kelvyn Guevara Ferreira!" src="./img/author.png">
+                    <h5 class="fw-bolder text-light p-3" id="author-title">KLEBER FERREIRA <br>
+                        <div data-bs-toggle="popover" data-bs-trigger="hover" data-bs-placement="top" title="Correspondência entre o sistema e o mundo real" data-bs-content="Se os usuários estão familiarizados com representações gráficas de algo, posso manter minha interface mais clean utilizando estes grafismos ao invés de um texto que diz ''Clique aqui para visitar meu LinkedIn''">
+                            <a class="text-light px-2" href="https://www.linkedin.com/in/kleberdotnet/" target="_blank" title="LinkedIn"><i class="bi bi-linkedin"></i> </a>
+                            <a class="text-light px-2" href="https://github.com/KleberDotNet" target="_blank" title="GitHub"><i class="bi bi-github"></i></a>
+                            <a class="text-light px-2" href="https://bykgf.itch.io/" target="_blank" title="Itch.io"><i class="bi bi-controller"></i></a>
+                        </div>    
+                    </h5>
+                </div>
+                <div class="col-6">
+                    <div class="text-light">
+                        <p> <i class="bi bi-mortarboard-fill"></i> Tecnólogo em Jogos Digitais (Universidade Cruzeiro do Sul)
+                        <br> <i class="bi bi-file-earmark-code-fill"></i> Desenvolvedor .NET na Augmensys desde 2021
+                        <br> <i class="bi bi-file-earmark-code-fill"></i> Desenvolvedor Web Autônomo desde 2016
+                        <br> <i class="bi bi-radioactive"></i> Ataque: 5000
+                        <br> <i class="bi bi-shield-fill"></i> Defesa: 4200
+                        <br> <i class="bi bi-arrow-up-right"></i> Nível: 23
+                        <br>
+                        <br> <span><em>"Espero que este projeto te ajude de alguma forma. Avante!"</em></span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
 
     <!--Footer-->
 
     <div class="bg-dark text-light text-center pb-1">
         <div class="container">
-            <p class="fw-lighter" data-bs-toggle="popover" data-bs-trigger="hover" data-bs-placement="top" data-bs-content="Oi" id="footer-message">byKGF</p>
+            <p class="fw-lighter" data-bs-toggle="popover" data-bs-trigger="hover" data-bs-placement="top" data-bs-content="Bom dia, boa tarde, boa noite e boa sorte!" id="footer-message">byKGF</p>
         </div>
     </div>
 
