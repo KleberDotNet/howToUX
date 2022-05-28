@@ -25,6 +25,10 @@ a
     --body-text-color: rgb(255, 255, 255);    
 }
 
+#credits {
+    background-color: black;
+}
+
 /* TITLE SCREEN */
 #dark-mode-switch {
     padding: 0;
