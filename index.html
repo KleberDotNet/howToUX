@@ -16,7 +16,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;500;700;900&display=swap" rel="stylesheet">
 
-
     <!--Custom CSS-->
     <link rel="stylesheet" href="style.css">
 
@@ -25,8 +24,8 @@
     <title>HowToUX</title>
 </head>
 <body>
-    
-    <!--Title Screen-->
+
+    <!--Section 0: Title Screen-->
     
     <div class="bg-primary p-5 pb-1" id="title-screen">
         
@@ -37,7 +36,7 @@
         </div>
 
         <div class="container text-center">
-            <h1 data-bs-toggle="popover" data-bs-trigger="hover" title="Estética e Design minimalista" data-bs-content="O título do site está centralizado e em destaque. Dê destaque ao produto ou negócio na sua capa ou landing page. Menos é mais." id="title">HOWTOUX<span id="title-dotcom">.com</span></h1>
+            <h1 data-bs-toggle="popover" data-bs-trigger="hover" title="Estética e Design minimalista" data-bs-content="O título do site está centralizado e em destaque. Dê destaque ao produto ou negócio na sua capa ou landing page. Menos é mais." id="title">HOWTOUX<span id="title-dotcom">.xyz</span></h1>
 
             <p class="lead p-3" data-bs-toggle="popover" data-bs-trigger="hover" title="Estética e Design minimalista" data-bs-placement="bottom" data-bs-content="Com clareza e poucas palavras, mostre ao que veio.">Boas práticas de design de interfaces</p>
 
@@ -49,7 +48,7 @@
         </div>
     </div>
 
-    <!--Intro - 2 Containers-->
+    <!--Section 1: Intro - 2 Containers-->
 
     <div class="d-sm-flex align-items-center justify-content-between p-5" id="intro">
         <div class="container">
@@ -87,26 +86,35 @@
         </div>
     </div>
 
-    <!--Slides-->
+    <!--Section 2: Slides-->
 
 
-    <!--Jumbotron-->
+    <!--Section 3: Jumbotron-->
 
     <div class="bg-soft p-5 rounded-3" id="jumbotron">
         <div class="row container-fluid py-5">
-            <div class="col-sm-7 p-4" data-bs-toggle="popover" data-bs-trigger="hover" title="heurística" data-bs-placement="right" data-bs-content="Explicar">
+            <div class="col-sm-7 p-4" data-bs-toggle="popover" data-bs-trigger="hover" title="Estética e design minimalista" data-bs-placement="right" data-bs-content="Ao ler uma frase os olhos escaneiam o texto da esquerda para a direita, dividindo as palavras em pequenos grupos. Nem todas páginas da sua interface precisam conter longos parágrafos. Entendendo o objetivo do sistema e a necessidade do usuário podemos tornar a leitura em algo mais intuitivo e menos cansativo.       Créditos: Carolina Bessa e Vahur Singa">
                 <h1 class="display-5 fw-bold">DICA: Seu usuário não lê</h1>
-                <p class="fs-4">
+                <p class="fs-4" id="jumbotronText">
                 O usuário escaneia da direita para esquerda.
                 <br>Separe seu texto em pequenos
                 <br>grupos de palavras.</p>
-                <button class="btn btn-primary btn-lg" type="button">Codificar mudança no texto para exemplo</button>
+                <button class="btn btn-primary btn-lg" onclick="textSwap()" type="button">Ver a diferença</button>
             </div>
         </div>
     </div>
 
 
-    <!--Author-->
+    <!--Section 4: Dev Tools-->
+
+
+    <!--Section 5: Articles-->
+
+
+    <!--Section 6: Calculator-->
+
+
+    <!--Section 7: Author-->
     
     <div class="bg-primary-inverted d-sm-flex p-5" id="author">
 
@@ -118,7 +126,7 @@
                 <div class="col-4 text-center">
                     <img class="img-fluid" data-bs-toggle="popover" data-bs-trigger="hover" data-bs-placement="top" data-bs-content="Oi, meu nome é Kleber Kelvyn Guevara Ferreira!" src="./img/author.png">
                     <h5 class="fw-bolder text-light p-3" id="author-title">KLEBER FERREIRA <br>
-                        <div data-bs-toggle="popover" data-bs-trigger="hover" data-bs-placement="top" title="Correspondência entre o sistema e o mundo real" data-bs-content="Se os usuários estão familiarizados com representações gráficas de algo, posso manter minha interface mais clean utilizando estes grafismos ao invés de um texto que diz ''Clique aqui para visitar meu LinkedIn''">
+                        <div data-bs-toggle="popover" data-bs-trigger="hover" data-bs-placement="top" title="Correspondência entre o sistema e o mundo real" data-bs-content="Se os usuários estão familiarizados com representações gráficas de algo, posso manter minha interface mais clean utilizando estes ícones ao invés de um texto que diz ''Clique aqui para visitar meu LinkedIn''">
                             <a class="text-light px-2" href="https://www.linkedin.com/in/kleberdotnet/" target="_blank" title="LinkedIn"><i class="bi bi-linkedin"></i> </a>
                             <a class="text-light px-2" href="https://github.com/KleberDotNet" target="_blank" title="GitHub"><i class="bi bi-github"></i></a>
                             <a class="text-light px-2" href="https://bykgf.itch.io/" target="_blank" title="Itch.io"><i class="bi bi-controller"></i></a>
@@ -150,10 +158,15 @@
         </div>
     </div>
 
-    <!--Bootstrap JS with Popper-->
+    <!--Scripts-->
+    <!--Bootstrap 5.1 JavaScript with Popper-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-
-    <!--Custom JS-->
+    <!--Custom JavaScript index.js: Dark Mode setup and Popover initializer-->
     <script src="./index.js"></script>
+    <!--Custom JavaScript jumbotron.js: Text Switch for the Jumbotron section under the Slide section-->
+    <script src="./jumbotron.js"></script>
+    <!--Custom JavaScript calculator.js: Calculator program located under the Articles section-->
+    <script src="./calculator.js"></script>
+
 </body>
 </html>
