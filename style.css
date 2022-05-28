@@ -13,6 +13,7 @@ a
     --bg-primary: linear-gradient(rgb(199, 58, 58), rgb(212, 116, 116));
     --bg-primary-inverted: linear-gradient(rgb(212, 116, 116), rgb(199, 58, 58));
     --bg-secondary: white;
+    --bg-slides: rgb(211, 89, 89);
     --bg-soft: rgb(255, 185, 185);
     --body-text-color: black;
 }
@@ -21,6 +22,7 @@ a
     --bg-primary: linear-gradient(rgb(0, 0, 0), rgb(22, 22, 22));
     --bg-primary-inverted: linear-gradient(rgb(22, 22, 22), rgb(0, 0, 0));
     --bg-secondary: rgb(12, 12, 12);
+    --bg-slides: black;
     --bg-soft: rgb(54, 54, 54);
     --body-text-color: rgb(255, 255, 255);    
 }
@@ -96,6 +98,11 @@ a
 
 .bg-soft {
     background-image: var(--bg-soft);
+}
+
+.slides {
+    background-color: var(--bg-slides);
+    color: white;
 }
 
 /* OTHER SCREENS */
