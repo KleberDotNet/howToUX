@@ -79,8 +79,8 @@
                 <div class="col-sm-6 p-4">
                     <h2 class="fw-bolder" id="intro-title">O QUE SÃO AS HEURÍSTICAS DE NIELSEN?</h2>
                     <p class="pt-2 fw-light" data-bs-toggle="popover" data-bs-trigger="hover" data-bs-placement="left" title="Estética e design minimalista" data-bs-placement="right" data-bs-content="Você percebeu que este texto tem várias palavras com letras desorganizadas? Percebendo ou não você ainda consegue ler, então não encha linguiça na sua interface, seja conciso e estético. Confira a dica valiosa sobre a leitura do usuário na seção abaixo dos slides.">
-                        Criadas pelo cinetitsa de copmuatção Jakob Nielsen em 1990,
-                        estes pirncípois são regars gerais da comopsição de intefraces para que o usuário
+                        Criadas pelo cientitsa de comupatção Jakob Nielsen em 1990,
+                        estes pirncípois são regars gerais da compsoição de intefraces para que o usuário
                         tenha uma exepriêcnia mais apriomrada e menos casantiva.
                     </p>
                 </div>
@@ -142,9 +142,44 @@
 
     <div class="p-5" id="intro">
         <div class="container">
-            <h2 class="fw-bolder" id="intro-title" data-bs-toggle="popover" data-bs-trigger="hover" data-bs-placement="top" data-bs-content="Experimente a calculadora usando valores corretos e incorretos também. Por exemplo, tente escrever ''ABC'' no campo Peso.">
+            <h2 class="fw-bolder pb-5" id="intro-title">
                 OLHA SÓ! UMA CALCULADORA DE IMC
             </h2>
+
+            <div class="container">
+                <div class="row g-4">
+                    <div class="col-3">
+                        <div class="px-3">
+                            <div class="pb-2">
+                                <label for="weight" class="form-label">Seu peso</label>
+                                <input class="form-control" id="weight" placeholder="Ex.: 75.3">
+                            </div>
+
+                            <div class="py-2">
+                                <label for="height" class="form-label">Sua altura</label>
+                                <input class="form-control" id="height" placeholder="Ex.: 1.80">
+                            </div>        
+
+                            <div class="col-12 pt-3">
+                                <button class="btn btn-primary" onclick="calculate()">Calcular</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="py-5 bg-resultBox" id="resultBox">
+                            <p class="text-center px-3" id="resultLabel">Informe seu peso e altura</p>
+                            <h1 class="fs-1 text-center fw-bolder px-3" id="result"><i class="bi bi-emoji-smile-fill"></i>
+                            <h5 class="text-center px-3" id="resultText">E vamos calcular seu IMC</h5>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="p-3 border bg-light">
+        
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
         </div>
     </div>
 
